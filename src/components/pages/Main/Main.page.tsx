@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Image } from '@mantine/core';
 import FeedCell from '../../molecules/FeedCell/FeedCell';
 import Feed from '../../organisms/Feed/Feed';
 import { useStyles } from './styles'
@@ -60,7 +61,15 @@ const Main: React.FC<Props> = () => {
     }
 
     return (
-        <div className={classes.container}  >
+        <div className={classes.container} >
+            {!showFeed &&
+                <Image
+                    style={{ marginBottom: '20px' }}
+                    radius="xs"
+                    src={`/assets/header.png`}
+                    alt="Image is missing"
+                />
+            }
             <div className={classes.feedCellsContainer} >
                 {showFeed ?
                     <Feed
@@ -86,9 +95,15 @@ const Main: React.FC<Props> = () => {
                             )
                         }
                     </>
-
                 }
             </div>
+            {!showFeed &&
+                <Image
+                    radius="xs"
+                    src={`/assets/footer.png`}
+                    alt="Image is missing"
+                />
+            }
         </div>
     )
 };

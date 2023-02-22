@@ -22,16 +22,19 @@ const Feed: React.FC<Props> = ({ feedVideo: { _id, description, publishDate, tit
 
     return (
         <div className={classes.container} >
+            <div className={classes.backButtonWrapper}>
+
+                <button
+                    className={classes.backButton}
+                    onClick={() => setShowFeed(false)}
+                >Back</button>
+            </div>
             <iframe
                 className={classes.iframe}
                 src={`https://www.youtube.com/embed/${_id}?html5=1`}
                 frameBorder={"0"}
                 allowFullScreen={true}>
             </iframe>
-            <button
-                className={classes.backButton}
-                onClick={() => setShowFeed(false)}
-            >Back</button>
             <div className={classes.title}>{title}</div>
             <div className={classes.description}>{description}</div>
         </div>

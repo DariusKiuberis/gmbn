@@ -6,11 +6,19 @@ export const useStyles = createStyles((theme, _params, getRef) => ({
         height: '100vh',
     },
 
+    backButtonWrapper: {
+        // border: '1px solid red',
+        margin: '20px 20px',
+        display: 'flex',
+    },
+
     backButton: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        zIndex: 1,
+        backgroundColor: 'tomato',
+        borderRadius: 5,
+        border: 'none',
+        color: 'white',
+        fontSize: '12px',
+        padding: '3px 10px 3px 10px',
     },
 
     iframe: {

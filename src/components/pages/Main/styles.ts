@@ -5,9 +5,8 @@ export const useStyles = createStyles((theme, _params, getRef) => ({
         // border: 'solid red',
         width: '100%',
         height: '100vh',
-
-        // temporary while I create header and footer
-        padding: '120px 0 150px 0'
+        display: 'flex',
+        flexDirection: 'column',
     },
     feedCellsContainer: {
         // border: 'solid 4px blue',
@@ -15,6 +14,7 @@ export const useStyles = createStyles((theme, _params, getRef) => ({
         display: 'flex',
         flexDirection: 'column',
         // padding: '0 20px',
+        flex: 1,
     },
     feedCellWrapper: {
         // border: 'solid green',
