@@ -14,10 +14,10 @@ export const useStyles = createStyles((theme, _params, getRef) => ({
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        padding: '0 20px',
+        // padding: '0 20px',
     },
     feedCellWrapper: {
         // border: 'solid green',
-        margin: '40px 0 20px 0',
+        margin: '20px 20px',
     }
 }));
