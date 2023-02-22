@@ -24,6 +24,7 @@ type Props = {};
 const Main: React.FC<Props> = () => {
     const { classes } = useStyles();
 
+    // all useStates should be changed to useReducer
     const [state, setState] = useState<{
         videosLoaded: Video,
         hasDataUpdated: boolean

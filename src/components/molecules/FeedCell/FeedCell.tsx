@@ -2,17 +2,6 @@ import * as React from 'react';
 import { Image } from '@mantine/core';
 import { useStyles } from './styles'
 
-type VideoData = {
-    __typename: string;
-    _id: string;
-    description: string;
-    public: boolean;
-    publishDate: Date;
-    title: string;
-    urlTitle: string;
-    videos: [];
-}
-
 type Props = {
     videoId: string;
     title: string;
